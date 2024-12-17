@@ -1,0 +1,29 @@
+Para configurar o projeto cypress:
+
+1. Inicializar o repositório git:
+    git init
+    - cria uma pasta oculta '.git'
+
+2. Criar um arquivo oculto: .gitignore
+    - esse aruiqvo irá proteger informações sensíveis
+
+3. Criar o arquivo README.md
+    - contém as informações essenciais do projeto
+
+4. Inicializar o projeto node:
+    npm init -y
+    - serão criados os arquivos 'package.json' e 'package-lock.json'
+    - traz as configurações do projeto
+
+5. Criar os arquivos 'cypress.env.json' e 'cypress.env.example.json', passando um objeto vazio em cada um: {}
+
+5. Instalar o cypress:
+    npm install cypress@12.15.0 --save-dev
+
+6. Executar o cypress:
+    npx cypress open
+    - somente após inicializar, será configurado o projeto cypress, e deve ser apresentada a pasta 'cypress' e o arquivo 'cypress.config.js'.
+        cypress
+            - e2e
+            - fixtures
+            - support
