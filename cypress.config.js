@@ -7,9 +7,11 @@ module.exports = defineConfig({
     env: {
       viewportWidthBreakpoint: 768,
     },
-    // setupNodeEvents(on, config) {
-    //   // implement node event listeners here
-    // },
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+      require('@cypress/grep/src/plugin')(config)
+      return config
+    },
   },
   projectId: 'ztvw2x'
 })
