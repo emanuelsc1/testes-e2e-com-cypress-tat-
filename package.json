@@ -1,6 +1,7 @@
 {
   "name": "cypress-end-to-end",
   "version": "1.0.0",
+  "description": "Sample project to demonstrate end-to-end (e2e) tests written with [Cypress](https://cypress.io) running on GitHub Actions.",
   "main": "cypress.config.js",
   "scripts": {
     "lint": "eslint cypress/**/*.js && eslint cypress.config.js",
@@ -24,7 +25,6 @@
     "eslint": "^8.43.0",
     "eslint-plugin-cypress": "^2.13.3"
   },
-  "description": "",
   "dependencies": {
     "cypress-end-to-end": "file:"
   }
